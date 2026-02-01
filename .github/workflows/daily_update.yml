@@ -33,6 +33,15 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+          
+          # Add the file
           git add market-data.json
+          
+          # Only commit if there are actually changes to the data
           git commit -m "Automated Market Data Update: $(date)" || echo "No changes to commit"
-          git push
+          
+          # Rebase ensures the automation stays in sync with your manual changes
+          git pull --rebase origin main
+          
+          # Push the final result
+          git push origin main
