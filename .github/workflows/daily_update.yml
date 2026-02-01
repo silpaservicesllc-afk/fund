@@ -9,10 +9,13 @@ on:
 jobs:
   update-data:
     runs-on: ubuntu-latest
+    # This block explicitly tells GitHub to allow the script to write to the repo
+    permissions:
+      contents: write
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-
+      
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
