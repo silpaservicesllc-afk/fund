@@ -34,3 +34,8 @@ jobs:
         with:
           commit_message: "Automated Market Data Update"
           file_pattern: 'market-data.json'
+          # This ensures the action pulls the latest changes before trying to push
+          push_options: '--force' 
+          branch: main
+          # Add this to handle the "fetch first" issue by force-syncing
+          skip_dirty_check: false
