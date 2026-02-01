@@ -30,10 +30,24 @@ jobs:
         run: python update_market_data.py
 
       - name: Commit and Push changes
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "Automated Market Data Update: ${{ github.event.head_commit.timestamp }}"
-          file_pattern: 'market-data.json'
-          branch: main
-          commit_user_name: github-actions[bot]
-          commit_user_email: github-actions[bot]@users.noreply.github.com
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "github-actions"
+    
+          # Fetch the absolute latest from the remote to be sure
+          git fetch origin main
+    
+          git add market-data.json
+    
+          # Check if there are changes to commit
+          if ! git diff --cached --quiet; then
+            git commit -m "Automated Market Data Update: $(date)"
+      
+            # Pull with a rebase to merge remote changes under your new commit
+            git pull --rebase origin main
+      
+            # Push the final result
+            git push origin main
+          else
+            echo "No changes to market-data.json"
+          fi
