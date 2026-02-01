@@ -1,0 +1,35 @@
+name: Daily Market Data Update
+
+on:
+  schedule:
+    # 03:00 UTC is 10:00 PM EST (adjust for DST if needed)
+    - cron: '0 3 * * *'
+  workflow_dispatch: # Allows you to run it manually for testing
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run update script
+        env:
+          ALPHA_VANTAGE_KEY: ${{ secrets.ALPHA_VANTAGE_KEY }}
+        run: python update_market_data.py
+
+      - name: Commit and Push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add market-data.json
+          git commit -m "Automated Market Data Update: $(date)" || echo "No changes to commit"
+          git push
