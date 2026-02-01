@@ -34,6 +34,16 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "github-actions"
           git add market-data.json
-          git commit -m "Automated Market Data Update: $(date)" || echo "No changes to commit"
-          git pull --rebase origin main
-          git push origin main
+    
+          # Only commit if there are actual changes to the file
+          if git diff --quiet && git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Automated Market Data Update: $(date)"
+      
+            # Pull latest changes and rebase to avoid the 'rejected' error
+            git pull --rebase origin main
+      
+            # Force the push if necessary, or just a standard push
+            git push origin main
+          fi
