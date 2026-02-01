@@ -30,20 +30,10 @@ jobs:
         run: python update_market_data.py
 
       - name: Commit and Push changes
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "github-actions"
-          git add market-data.json
-    
-          # Only commit if there are actual changes to the file
-          if git diff --quiet && git diff --staged --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "Automated Market Data Update: $(date)"
-      
-            # Pull latest changes and rebase to avoid the 'rejected' error
-            git pull --rebase origin main
-      
-            # Force the push if necessary, or just a standard push
-            git push origin main
-          fi
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Automated Market Data Update: ${{ github.event.head_commit.timestamp }}"
+          file_pattern: 'market-data.json'
+          branch: main
+          commit_user_name: github-actions[bot]
+          commit_user_email: github-actions[bot]@users.noreply.github.com
