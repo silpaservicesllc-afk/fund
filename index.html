@@ -53,7 +53,20 @@
             transition: 0.5s;
             padding-top: 60px;
         }
+        /* This forces the columns to sit side-by-side */
+        .top-grid {
+            display: grid;
+            grid-template-columns: 1.6fr 1fr; /* Gives the Thesis more space than the Contact */
+            gap: 2.5rem;                       /* Adds space between the two columns */
+            align-items: start;                /* Keeps both columns aligned at the top */
+        }
 
+        /* This makes sure they stack on top of each other on mobile phones */
+        @media (max-width: 768px) {
+            .top-grid {
+                grid-template-columns: 1fr;
+            }
+        }
         .nav-overlay a {
             padding: 15px 32px;
             text-decoration: none;
@@ -171,19 +184,10 @@
                 
                 <div class="reg-item" style="margin-top: 1rem; border-left: 3px solid var(--secondary);">
                     <span class="reg-title">Fiduciary Standard</span>
-                    <p style="margin: 0; font-size: 0.8rem;">As an RIA, we are legally bound to put your interests first. No hidden agendas, just data-driven management.</p>
+                    <p style="margin: 0; font-size: 0.8rem;">As an RIA, we are legally bound to put your interests first. Your funds are segregated and custodied at Fidelity Investments.</p>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="section">
-        <h2>Contact</h2>
-        <p><strong>Dr. Sean Sood, Ph.D.</strong></p>
-        <p class="distinctions">Portfolio Manager</p>
-        <p class="professional-history">Alumni: J.P. Morgan | Citi | Bank of America Merrill Lynch</p>
-        <p>📍 New York, NY</p>
-        <p>📧 <a href="mailto:silpaservicellc@gmail.com" class="contact-link">silpaservicellc@gmail.com</a></p>
-        <p>🔗 <a href="https://www.linkedin.com/in/ssood89/" class="contact-link" target="_blank">LinkedIn Profile</a></p>
     </section>
 
     <section class="section">
