@@ -6,79 +6,79 @@
     <title>Pillar Global Fund | Managed by Silpa Services LLC</title>
     <style>
         /* Navigation Styles */
-.nav-bar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: var(--primary);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.8rem 1.5rem;
-    box-sizing: border-box;
-    z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-}
+        .nav-bar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: var(--primary);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.8rem 1.5rem;
+            box-sizing: border-box;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
 
-.nav-logo {
-    color: white;
-    font-weight: bold;
-    letter-spacing: 1px;
-    font-size: 1.1rem;
-}
+        .nav-logo {
+            color: white;
+            font-weight: bold;
+            letter-spacing: 1px;
+            font-size: 1.1rem;
+        }
 
-.burger-menu {
-    cursor: pointer;
-    display: block;
-}
+        .burger-menu {
+            cursor: pointer;
+            display: block;
+        }
 
-.burger-bar {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 5px 0;
-    transition: 0.4s;
-}
+        .burger-bar {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            margin: 5px 0;
+            transition: 0.4s;
+        }
 
-/* Side Menu Panel */
-.nav-overlay {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1001;
-    top: 0;
-    right: 0;
-    background-color: var(--primary);
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
+        /* Side Menu Panel */
+        .nav-overlay {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1001;
+            top: 0;
+            right: 0;
+            background-color: var(--primary);
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
 
-.nav-overlay a {
-    padding: 15px 32px;
-    text-decoration: none;
-    font-size: 1.5rem;
-    color: #f1f5f9;
-    display: block;
-    transition: 0.3s;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-}
+        .nav-overlay a {
+            padding: 15px 32px;
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: #f1f5f9;
+            display: block;
+            transition: 0.3s;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
 
-.nav-overlay a:hover {
-    color: var(--secondary);
-}
+        .nav-overlay a:hover {
+            color: var(--secondary);
+        }
 
-.nav-overlay .close-btn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 36px;
-    cursor: pointer;
-    color: white;
-}
+        .nav-overlay .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 45px;
+            font-size: 36px;
+            cursor: pointer;
+            color: white;
+        }
 
-/* Adjust header to account for fixed nav bar */
-header { padding-top: 6rem; }
+        /* Adjust header for fixed nav bar */
+        header { padding-top: 6rem; }
         :root { --primary: #0f172a; --secondary: #b5935a; --text: #334155; --bg: #f8fafc; }
         body { font-family: 'Helvetica Neue', Arial, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); margin: 0; }
         header { background: var(--primary); color: white; padding: 3rem 1.5rem; text-align: center; }
@@ -120,9 +120,11 @@ header { padding-top: 6rem; }
         .distinctions { font-size: 0.9rem; color: #64748b; margin-top: -5px; font-weight: bold; }
         .professional-history { font-size: 0.85rem; margin-top: 0; margin-bottom: 15px; color: var(--text); font-style: italic; }
         footer { text-align: center; padding: 3rem; font-size: 0.8rem; color: #64748b; }
+        .selector-box { width: 100%; padding: 12px; border: 1px solid var(--secondary); border-radius: 4px; background: white; font-size: 1rem; }
     </style>
 </head>
 <body>
+
 <div class="nav-bar">
     <div class="nav-logo">PILLAR GLOBAL</div>
     <div class="burger-menu" onclick="toggleNav()">
@@ -135,65 +137,67 @@ header { padding-top: 6rem; }
 <div id="sideNav" class="nav-overlay">
     <span class="close-btn" onclick="toggleNav()">&times;</span>
     <a href="index.html" onclick="toggleNav()">Home</a>
-    <a href="Investor_pitch.pdf" target="_blank">More Details</a>
+    <a href="Investor_pitch.pdf" target="_blank">Strategy Deck</a>
+    <a href="mailto:silpaservicellc@gmail.com">Contact</a>
 </div>
+
 <header>
     <h1>PILLAR GLOBAL FUND</h1>
-    <span class="by-line">By Silpa Services LLC</span>
-    <p>Scientific Rigor in Global Capital Management</p>
+    <span class="by-line">Managed by Silpa Services LLC</span>
+    <p>High-Conviction Capital Management for the Digital Age</p>
 </header>
 
 <div class="container">
     
     <section class="section">
-        <h2>Our Strategy</h2>
+        <h2>The Thesis</h2>
         <p>
-            Pillar Global Fund is a New York-based investment advisory strategy specializing in high-conviction digital platforms and mission-critical global infrastructure. We leverage fundamental analysis and real-time market metrics—specifically focusing on <strong>ROIC vs. WACC spreads</strong>—to identify durable value creators across the technology, financial services, and essential resource sectors. 
+            At Pillar Global, we don’t chase short-term hype. Our strategy centers on a deep analysis of <strong>ROIC vs. WACC spreads</strong> to identify businesses that are actually creating value, not just consuming capital. We look for the "toll booths" of the global economy—high-conviction digital platforms and critical infrastructure with durable moats.
         </p>
         <p>
-            Our philosophy is rooted in finding resilient, capital-efficient business models that underpin the structural growth of the modern global economy. From dominant global marketplaces and payment networks to frontier communications and strategic land holdings, we invest in the compounding entities that form the backbone of international commerce.
+            Our philosophy is built on finding resilient, capital-efficient business models that anchor the structural growth of the modern world. From the dominant global marketplaces and payment rails you use daily to frontier satellite communications, we invest in the compounding entities that form the backbone of international commerce.
         </p>
     </section>
 
     <section class="section">
-        <h2>Regulatory & Professional Qualifications</h2>
+        <h2>Fiduciary Standards & Credentials</h2>
         <p>
-            Pillar Global Fund operates under the fiduciary standards of <strong>Silpa Services LLC</strong>, emphasizing transparency, legal compliance, and rigorous professional examination.
+            Operating under <strong>Silpa Services LLC</strong>, we prioritize transparency and a legal obligation to your success. As a Registered Investment Adviser (RIA), our duty is to your best interest—always.
         </p>
         <div class="reg-grid">
             <div class="reg-item">
-                <span class="reg-title">NY State Registration</span>
-                <p style="font-size: 0.85rem; margin: 0;">Registered Investment Adviser (RIA) in the State of New York. Regulated by the Office of the Attorney General, Investor Protection Bureau.</p>
+                <span class="reg-title">Series 65 Certified</span>
+                <p style="font-size: 0.85rem; margin: 0;">Successfully passed the Uniform Investment Adviser Law Examination. Licensed to provide professional, fiduciary-grade investment advice.</p>
             </div>
             <div class="reg-item">
-                <span class="reg-title">FINRA / IARD Oversight</span>
-                <p style="font-size: 0.85rem; margin: 0;">Firm filings and regulatory disclosures managed via the FINRA Investment Adviser Registration Depository (IARD).</p>
+                <span class="reg-title">NY State Registered</span>
+                <p style="font-size: 0.85rem; margin: 0;">Registered Investment Adviser (RIA) in New York, governed by the Investor Protection Bureau of the NY Attorney General.</p>
             </div>
             <div class="reg-item">
-                <span class="reg-title">IAR Series 65 Candidate</span>
-                <p style="font-size: 0.85rem; margin: 0;">Investment Adviser Representative (IAR) qualification via the Series 65 Uniform Law Examination (Scheduled Feb 2026).</p>
+                <span class="reg-title">Institutional Custody</span>
+                <p style="font-size: 0.85rem; margin: 0;">Assets are held securely at <strong>Fidelity Institutional</strong>. We manage the strategy; an industry giant secures the capital.</p>
             </div>
             <div class="reg-item">
-                <span class="reg-title">Fiduciary Standard</span>
-                <p style="font-size: 0.85rem; margin: 0;">Legally obligated to act in the best interest of clients at all times, placing investor needs above firm profits.</p>
+                <span class="reg-title">SIPC Protection</span>
+                <p style="font-size: 0.85rem; margin: 0;">Accounts are protected by the SIPC for up to $500,000 (including $250k for cash) against custodial failure.</p>
             </div>
         </div>
     </section>
 
-<section class="section">
-        <h2>Fee Structure</h2>
+    <section class="section">
+        <h2>Fee Alignment</h2>
         <p>
-            We believe in high-conviction management with institutional-grade rigor. Our fee philosophy is built on the principle of <strong>alignment</strong>: our success is purely a function of your portfolio's performance. By keeping overhead lean, we ensure that a greater share of your capital remains working in the market.
+            Success should be a shared outcome. Our fee structure is intentionally lean, ensuring that more of your capital stays working for you in the market. 
         </p>
         <div class="fee-card">
-            <span class="fee-label">First-Year Founding Rate</span>
+            <span class="fee-label">Founding Partner Rate</span>
             <span class="fee-value">1.00% <small style="font-size: 1rem; font-weight: normal;">Annual Management Fee</small></span>
             <p style="margin-top: 10px; font-size: 0.85rem; color: var(--text);">
-                *Applied to Assets Under Management (AUM). This preferential rate is available to founding partners for the first 12 months of commitment and may be subject to adjustment for future capital inflows.
+                *Applied to Assets Under Management (AUM). This preferential rate is locked in for founding partners for their first 12 months, rewarding early alignment with our growth.
             </p>
         </div>
         <p style="font-size: 0.9rem; margin-top: 1rem;">
-            While many institutional funds carry 1.5% to 2.0% base fees, Pillar Global Fund offers a competitive entry point, allowing you to benefit from the professional oversight of a manager with a background at J.P. Morgan, Citi, and Merrill Lynch at a fraction of the traditional cost.
+            While legacy funds often start at 1.5% or 2.0%, Pillar Global offers institutional-grade management with a pedigree from J.P. Morgan, Citi, and Merrill Lynch at a fraction of the cost.
         </p>
     </section>
 
@@ -240,86 +244,52 @@ header { padding-top: 6rem; }
         </div>
     </section>
 
-<section class="section">
-        <h2>Asset Custody & Investor Protection</h2>
+    <section class="section">
+        <h2>Custodial Advantage: The Fidelity Model</h2>
         <p>
-            The security of investor capital is our primary operational priority. We utilize a "Direct-to-Custodian" model to ensure maximum transparency and fund safety.
+            We utilize a <strong>Non-Custodial Investment Model</strong>. This creates a clear structural separation between fund management and the safety of your assets.
         </p>
         
-        <div class="reg-grid">
-            <div class="reg-item">
-                <span class="reg-title">Institutional Custody</span>
-                <p style="font-size: 0.85rem; margin: 0;">All fund assets are held in segregated accounts at <strong>Fidelity Institutional</strong>. This ensures third-party oversight and institutional-grade asset protection.</p>
-            </div>
-            <div class="reg-item">
-                <span class="reg-title">Direct Funding Model</span>
-                <p style="font-size: 0.85rem; margin: 0;">Investors wire capital directly to their segregated account at Fidelity. Silpa Services LLC never takes physical possession of client funds, eliminating intermediary risk.</p>
-            </div>
-            <div class="reg-item">
-                <span class="reg-title">SIPC Protection</span>
-                <p style="font-size: 0.85rem; margin: 0;">Assets are protected by the Securities Investor Protection Corporation (SIPC) for up to $500,000 (including $250,000 for cash claims) against custodial failure.</p>
-            </div>
-            <div class="reg-item">
-                <span class="reg-title">Digital Security Protocols</span>
-                <p style="font-size: 0.85rem; margin: 0;">We enforce multi-factor authentication (MFA) and encrypted data transmission for all administrative and reporting interactions.</p>
-            </div>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Standard Brokerage Model</th>
+                        <th style="color: var(--secondary); background: #fdfbf7;">Fidelity Institutional Custody</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Asset Location</strong></td>
+                        <td>Often held in "Street Name" on firm's balance sheet.</td>
+                        <td style="background: #fdfbf7;"><strong>Segregated Accounts:</strong> Assets held independently of Silpa Services LLC.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Risk Profile</strong></td>
+                        <td>Assets potentially subject to seizure if firm fails.</td>
+                        <td style="background: #fdfbf7;"><strong>Bankruptcy Remoteness:</strong> Assets are protected from management liabilities.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Service Model</strong></td>
+                        <td>Integrated retail execution.</td>
+                        <td style="background: #fdfbf7;"><strong>Institutional Clearing:</strong> Professional-grade transparency and reporting.</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
+        <p style="font-size: 0.85rem; color: #64748b; margin-top: 1rem;">
+            By selecting <strong>Fidelity Institutional</strong>, we provide the same level of security and oversight used by the world's largest pension funds.
+        </p>
     </section>
-<section class="section">
-    <h2>Custodial Advantage: The Fidelity Model</h2>
-    <p>
-        Pillar Global Fund utilizes a <strong>Non-Custodial Investment Model</strong>. Unlike traditional brokerage structures where assets may be held on a firm's balance sheet, our partnership with Fidelity Institutional ensures a structural separation between fund management and asset custody.
-    </p>
-    
-    <div class="table-container">
-        <table>
-            <thead>
-                <tr>
-                    <th>Feature</th>
-                    <th>Standard Brokerage Model</th>
-                    <th style="color: var(--secondary); background: #fdfbf7;">Fidelity Institutional Custody</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>Asset Location</strong></td>
-                    <td>Often held in "Street Name" on firm's balance sheet.</td>
-                    <td style="background: #fdfbf7;"><strong>Segregated Accounts:</strong> Assets held independently of Silpa Services LLC.</td>
-                </tr>
-                <tr>
-                    <td><strong>Risk Profile</strong></td>
-                    <td>Assets potentially subject to seizure by creditors if firm fails.</td>
-                    <td style="background: #fdfbf7;"><strong>Bankruptcy Remoteness:</strong> Assets are protected from management liabilities.</td>
-                </tr>
-                <tr>
-                    <td><strong>Insolvency Protection</strong></td>
-                    <td>Standard SIPC (Up to $500k).</td>
-                    <td style="background: #fdfbf7;"><strong>SIPC + Excess Coverage:</strong> Standard SIPC plus Fidelity's additional private insurance.</td>
-                </tr>
-                <tr>
-                    <td><strong>Service Model</strong></td>
-                    <td>Integrated trading and retail execution.</td>
-                    <td style="background: #fdfbf7;"><strong>Institutional Clearing:</strong> Professional-grade transparency and reporting.</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <p style="font-size: 0.85rem; color: #64748b; margin-top: 1rem;">
-        By selecting <strong>Fidelity Institutional</strong>, we provide our investors with the same level of security and oversight used by the world's largest pension funds and endowments.
-    </p>
-</section>
-<section class="section">
+
+    <section class="section">
         <h2>Investor Resources</h2>
-        <a href="#" class="doc-link">📄 Form ADV Part 2A (The Brochure) - PDF</a>
-        <a href="#" class="doc-link">📄 Foreign Investor Onboarding Checklist</a>
+        <a href="Investor_pitch.pdf" target="_blank" class="doc-link">📄 Download Full Strategy Pitch (PDF)</a>
+        <a href="#" class="doc-link">📄 Form ADV Part 2A (The Brochure)</a>
         
-        <h3>Quarterly Reports</h3>
-    <a href="reports/Q4_2025_Report.pdf" target="_blank" class="doc-link">📄 Q4 2025 Quarterly Performance Report - PDF</a>
-    <a href="reports/Q3_2025_Report.pdf" target="_blank" class="doc-link">📄 Q3 2025 Quarterly Performance Report - PDF</a>
-    <a href="reports/Q2_2025_Report.pdf" target="_blank" class="doc-link">📄 Q2 2025 Quarterly Performance Report - PDF</a>
-    <a href="reports/Q1_2025_Report.pdf" target="_blank" class="doc-link">📄 Q1 2025 Quarterly Performance Report - PDF</a>
-        <h3>Investor Presentations</h3>
-        <p><small>Select a holding to view the specific investment thesis:</small></p>
+        <h3>Investment Theses</h3>
+        <p><small>Select a holding to view the specific thesis:</small></p>
         <select id="presentation-selector" class="selector-box" onchange="updatePresentation()">
             <option value="" disabled selected>Select an Investment...</option>
             <option value="AMZN" data-fullname="Amazon.com, Inc.">AMZN - Amazon.com, Inc.</option>
@@ -342,12 +312,13 @@ header { padding-top: 6rem; }
             <option value="LUMN" data-fullname="Lumen Technologies">LUMN - Lumen Technologies</option>
         </select>
         <div id="presentation-output">
-             <span style="font-size: 0.9rem; color: #64748b;">Please select a ticker above to access the investment thesis.</span>
+             <span style="font-size: 0.9rem; color: #64748b;">Please select a ticker above to access the thesis.</span>
         </div>
     </section>
-<section class="section">
+
+    <section class="section">
         <h2>Simulated Performance</h2>
-        <p>Growth of a hypothetical $1,000,000 investment based on our target allocation strategy throughout 2025.</p>
+        <p>Hypothetical growth of $1,000,000 based on our target allocation throughout 2025.</p>
         <div style="text-align: center; margin: 2rem 0;">
             <img src="performance_chart.png" alt="Pillar Global Fund Performance Chart" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
         </div>
@@ -358,30 +329,29 @@ header { padding-top: 6rem; }
                     <tr>
                         <th>Period</th>
                         <th>Portfolio Value (USD)</th>
-                        <th>Y-Axis Value (Millions)</th>
                         <th>Quarterly Gain (%)</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td>Start Q1</td><td>$1,000,000</td><td>1.00</td><td>—</td></tr>
-                    <tr><td>End Q1</td><td>$1,081,690</td><td>1.08</td><td>+8.17%</td></tr>
-                    <tr><td>End Q2</td><td>$1,244,906</td><td>1.24</td><td>+15.09%</td></tr>
-                    <tr><td>End Q3</td><td>$1,307,388</td><td>1.31</td><td>+5.02%</td></tr>
-                    <tr><td>End Q4</td><td>$1,431,315</td><td>1.43</td><td>+9.48%</td></tr>
+                    <tr><td>Start Q1</td><td>$1,000,000</td><td>—</td></tr>
+                    <tr><td>End Q1</td><td>$1,081,690</td><td>+8.17%</td></tr>
+                    <tr><td>End Q2</td><td>$1,244,906</td><td>+15.09%</td></tr>
+                    <tr><td>End Q3</td><td>$1,307,388</td><td>+5.02%</td></tr>
+                    <tr><td>End Q4</td><td>$1,431,315</td><td>+9.48%</td></tr>
                 </tbody>
             </table>
         </div>
         <p style="font-size: 0.85rem; color: #64748b; font-style: italic; margin-top: 1rem;">
-            * These figures represent a back-tested simulation using actual 2025 market data for the target holdings and do not represent actual fund results. Pillar Global Fund is in the process of establishment.
+            * Figures represent a back-tested simulation using actual 2025 market data. Pillar Global is in the final stages of establishment.
         </p>
     </section>
+
     <section class="section">
         <h2>Contact</h2>
-        <p><strong>Dr. S. Sood, M.S., Ph.D.</strong></p>
+        <p><strong>Dr. Sean Sood, Ph.D.</strong></p>
         <p class="distinctions">Portfolio Manager</p>
-        <p class="professional-history">Current: J.P. Morgan Chase | Ex-Citi | Ex-Bank of America Merrill Lynch</p>
+        <p class="professional-history">Alumni: J.P. Morgan | Citi | Bank of America Merrill Lynch</p>
         <p>📍 New York, NY</p>
-        <p>📞 <a href="tel:+16318752358" class="contact-link">+1 (631) 875 2358</a></p>
         <p>📧 <a href="mailto:silpaservicellc@gmail.com" class="contact-link">silpaservicellc@gmail.com</a></p>
         <p>🔗 <a href="https://www.linkedin.com/in/ssood89/" class="contact-link" target="_blank">LinkedIn Profile</a></p>
     </section>
@@ -389,37 +359,34 @@ header { padding-top: 6rem; }
 </div>
 
 <footer>
-    <p>&copy; 2026 Pillar Global Fund. All Rights Reserved. Managed by Dr. S. Sood.</p>
+    <p>&copy; 2026 Pillar Global Fund. All Rights Reserved. Managed by Silpa Services LLC.</p>
 </footer>
 
 <script>
     function toggleNav() {
-    const sideNav = document.getElementById("sideNav");
-    if (sideNav.style.width === "250px") {
-        sideNav.style.width = "0";
-    } else {
-        sideNav.style.width = "250px";
+        const sideNav = document.getElementById("sideNav");
+        sideNav.style.width = sideNav.style.width === "250px" ? "0" : "250px";
     }
-}
+
     const theses = {
-        "AMZN": "Amazon represents a unique intersection of global logistics dominance and high-margin cloud infrastructure through AWS. Its ability to continuously reinvest cash flow into scale makes it a core compounding holding for the digital economy.",
-        "GOOGL": "Alphabet maintains a near-impenetrable monopoly in search, providing a robust cash flow engine to fund long-term growth in cloud computing and platform services. Its data moat remains its most significant long-term asset.",
-        "META": "Meta controls the world's most valuable social real estate. Its transition to AI-driven ad targeting and massive user engagement makes it a premier play on the structural growth of digital advertising and platform ecosystems.",
-        "V": "Visa serves as a global 'toll booth' for commerce. Its vast network effect and the ongoing global shift away from cash provide high-margin, consistent growth that is resilient across multiple economic cycles.",
-        "MA": "Mastercard is a key duopoly player in the global payments space. Its high barriers to entry, strong pricing power, and focus on cross-border transaction technology ensure a stable path for long-term capital appreciation.",
-        "TSM": "TSM is the foundational architect of the digital age. As the world's leading foundry, it possesses a massive technological lead in manufacturing the mission-critical chips that power every aspect of modern infrastructure.",
-        "BRK-B": "Berkshire Hathaway offers exposure to a diversified group of high-quality, cash-generative businesses. It remains a bastion of capital preservation and long-term value creation led by world-class capital allocators.",
-        "COST": "Costco's unique membership-based model drives unparalleled customer loyalty. Its extreme operational efficiency and focus on member value create a powerful moat in the competitive global retail landscape.",
-        "WMT": "Walmart has successfully transformed into a true omnichannel retail leader. By leveraging its massive physical footprint and logistics network, it is capturing significant market share in both in-store and digital commerce.",
-        "MCO": "Moody's occupies a critical spot in the global financial ecosystem. Its credit ratings are an essential international standard, creating a high-margin business with recurring demand and high barriers to entry.",
-        "MU": "Micron Technology is a critical provider of memory and storage solutions essential for the AI revolution. As a leading manufacturer of DRAM and NAND, its high-performance memory is a mission-critical component in the data center and edge computing infrastructure.",
-        "UBER": "Uber is the dominant global platform for mobility and logistics. Its massive network effects and successful path toward sustained profitability make it the clear leader in the structural shift toward the gig economy.",
-        "TPL": "Texas Pacific Land is a capital-light royalty business with significant Permian Basin exposure. Its vast acreage provides high-margin exposure to resource development without the capital expenditure requirements of traditional energy firms.",
-        "ZETA": "Zeta Global leverages proprietary data and AI to disrupt the marketing cloud space. Its high-growth profile and improving operating margins offer significant potential for outsized returns as digital marketing matures.",
-        "ASTS": "AST SpaceMobile is a high-conviction bet on the future of global connectivity. Its direct-to-cell satellite network aims to eliminate mobile dead zones for billions of users, representing a massive addressable market opportunity.",
-        "LMND": "Lemonade uses AI and behavioral economics to reinvent the insurance experience. Its scalable, low-overhead model is designed to disrupt the trillion-dollar legacy insurance market through superior data and automation.",
-        "UA": "Under Armour represents a strategic turnaround opportunity in athletic apparel. We believe the brand's core identity remains strong, and focused operational improvements can unlock significant hidden value over a multi-year horizon.",
-        "LUMN": "Lumen is a deep-value play focused on critical fiber-optic infrastructure. Its extensive network is a foundational asset in an increasingly data-dependent world, providing significant upside as high-bandwidth demand accelerates."
+        "AMZN": "Amazon sits at the unique intersection of logistics dominance and high-margin cloud infrastructure. Its ability to reinvest cash flow into scale makes it a core compounding holding for the digital economy.",
+        "GOOGL": "Alphabet maintains a monopoly in search, providing a massive cash flow engine to fund long-term growth in AI and cloud services. Its data moat remains its most significant long-term asset.",
+        "META": "Meta controls the world's most valuable social real estate. Its transition to AI-driven ad targeting and massive user engagement makes it a premier play on the structural growth of digital advertising.",
+        "V": "Visa serves as a global 'toll booth' for commerce. Its network effect and the shift away from cash provide high-margin, consistent growth that is resilient across economic cycles.",
+        "MA": "Mastercard is a key duopoly player in payments. Its high barriers to entry, pricing power, and focus on cross-border tech ensure a stable path for long-term appreciation.",
+        "TSM": "TSM is the architect of the digital age. As the leading foundry, it possesses a massive technological lead in manufacturing the chips that power every aspect of modern infrastructure.",
+        "BRK-B": "Berkshire offers exposure to high-quality, cash-generative businesses. It remains a bastion of capital preservation and long-term value creation led by world-class allocators.",
+        "COST": "Costco's membership model drives unparalleled customer loyalty. Its extreme operational efficiency and focus on member value create a powerful moat in global retail.",
+        "WMT": "Walmart is now a true omnichannel leader. By leveraging its massive logistics network, it is capturing significant market share in both physical and digital commerce.",
+        "MCO": "Moody's occupies a critical spot in the financial ecosystem. Its credit ratings are an international standard, creating a high-margin business with recurring demand.",
+        "MU": "Micron provides the memory essential for the AI revolution. As a leader in DRAM and NAND, its tech is mission-critical in the data center and edge computing infrastructure.",
+        "UBER": "Uber is the dominant global platform for mobility and logistics. Its network effects and path to sustained profitability make it the clear leader in the shift toward the gig economy.",
+        "TPL": "Texas Pacific Land is a capital-light royalty business with massive Permian Basin exposure, providing high-margin resource exposure without the high CapEx of traditional firms.",
+        "ZETA": "Zeta Global leverages proprietary data and AI to disrupt the marketing cloud space. Its high-growth profile offers significant potential for outsized returns as digital marketing matures.",
+        "ASTS": "AST SpaceMobile is a high-conviction bet on global connectivity. Its direct-to-cell satellite network aims to eliminate dead zones for billions of users worldwide.",
+        "LMND": "Lemonade uses AI and behavioral economics to reinvent insurance. Its scalable, low-overhead model is designed to disrupt the legacy insurance market through automation.",
+        "UA": "Under Armour is a strategic turnaround opportunity. We believe the brand's core identity remains strong, and operational improvements can unlock significant hidden value.",
+        "LUMN": "Lumen is a deep-value play focused on critical fiber infrastructure. Its network is a foundational asset as high-bandwidth demand accelerates globally."
     };
 
     function updatePresentation() {
@@ -430,54 +397,36 @@ header { padding-top: 6rem; }
         const fullName = selectedOption.getAttribute('data-fullname');
 
         if (ticker && theses[ticker]) {
-            // Updated to point to a local /theses/ folder and open in new tab
             output.innerHTML = `
                 <p style="margin-top: 15px; font-size: 0.95rem; color: var(--text); border-left: 2px solid var(--secondary); padding-left: 15px; font-style: italic;">
                     ${theses[ticker]}
                 </p>
-                <a href="theses/${ticker}_Thesis.pdf" target="_blank" class="dynamic-link" style="margin-top: 15px;">
-                    📄 View Full Analysis: Why I chose ${fullName} (PDF)
+                <a href="theses/${ticker}_Thesis.pdf" target="_blank" class="doc-link" style="margin-top: 15px;">
+                    📄 View Full Analysis for ${fullName}
                 </a>
             `;
         }
     }
+
     async function updatePortfolio() {
         try {
-            // Fetch the JSON file generated by your GitHub Action
-            // Adding a timestamp parameter prevents the browser from showing "old" cached data
             const response = await fetch('./market-data.json?t=' + new Date().getTime());
-            
-            if (!response.ok) throw new Error('Network response was not ok');
-            
+            if (!response.ok) throw new Error('Network response error');
             const result = await response.json();
             const marketData = result.data;
-
-            // Select all rows that have a data-symbol attribute
             const rows = document.querySelectorAll('tr[data-symbol]');
-            
             rows.forEach(row => {
                 const symbol = row.getAttribute('data-symbol');
                 const changeVal = marketData[symbol];
                 const changeCell = row.querySelector('.change');
-
                 if (changeCell && changeVal !== undefined) {
                     const numericChange = parseFloat(changeVal);
-                    
-                    // Update the text with + or - sign
                     changeCell.innerText = (numericChange >= 0 ? '+' : '') + numericChange + '%';
-                    
-                    // Apply CSS classes for Green (pos) or Red (neg)
                     changeCell.className = 'change ' + (numericChange >= 0 ? 'pos' : 'neg');
                 }
             });
-
-            console.log("Portfolio data updated from market-data.json successfully.");
-        } catch (error) {
-            console.error("Error loading market data:", error);
-        }
+        } catch (error) { console.error("Data load error:", error); }
     }
-
-    // Run when the page is fully loaded
     document.addEventListener('DOMContentLoaded', updatePortfolio);
 </script>
 
