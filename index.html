@@ -122,9 +122,10 @@
             .reg-grid { grid-template-columns: 1fr; }
             td, th { padding: 8px; font-size: 0.75rem; }
             table { min-width: 700px; }
+            .ticker-link { word-break: break-all; font-size: 0.9rem; }
         }
 
-        .ticker-link { color: var(--primary); text-decoration: none; border-bottom: 1px dotted var(--secondary); }
+        .ticker-link { color: var(--primary); text-decoration: none; border-bottom: 1px dotted var(--secondary); word-break: break-word; overflow-wrap: break-word; }
         .pos { color: #15803d; font-weight: bold; }
         .neg { color: #b91c1c; font-weight: bold; }
         .doc-link { display: block; background: #f1f5f9; padding: 1rem; margin: 0.5rem 0; border-radius: 5px; text-decoration: none; color: var(--primary); font-weight: bold; border-left: 4px solid var(--secondary); transition: 0.3s; }
